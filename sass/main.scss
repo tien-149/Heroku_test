@@ -1,16 +1,109 @@
+@import "_vars";
+@import "_nav";
+
 main {
     width: 90%;
     text-align: center;
     margin: 0 auto;
 }
+$main-font:Biko, sans-serif;
+$main-color: #4e0606;
+
 .hidden{display:none;}
 
 .hero {
     background: url(../images/hero.jpg) center center no-repeat;
+    opacity: 60%;
     background-size: cover;
     height: 700px;
 }
 
 .mainHeader {
     display:flex;
+    flex-direction: row-reverse;  
+    padding: 10px;
+}
+
+// .mainNav {
+//     display: flex;
+//     flex-direction: row;
+//     float: right;
+//     ul{
+//         margin:10px;
+//     }
+//     li {
+//         display: inline-block;
+//         transition: all .3s ease-in;
+
+//             &:hover{
+//                 transform: scale(1.02);
+//             }
+//     }
+//     a {
+//         display: block;
+//         padding: 6px 12px;
+//         text-decoration: none;
+//         color: $main-color;
+//         font-family: $main-font;
+//         &:hover{
+//             color: #bf54a6;
+//         }
+//     }
+// }
+
+.logoCon {
+    padding: 15px;
+    margin-left: 30px;
+
+}
+
+.welcomeCon {
+    h3 {
+        font-size: 28px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font;
+        margin-top: 100px;
+
+    }
+    h4 {
+        font-size: 18px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font;
+        
+    }
+
+}
+
+.products {
+    img {
+    padding: 10px;
+    margin-top: 30px;
+    max-width:50%;
+    max-height:50%;
+    &:hover{
+        transform: scale(1.03);
+    }
+    }
+    h2 a{
+        font-size:20px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font;   
+        
+    }
+    h3 {
+        font-size:14px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font; 
+    }
+    p{
+        font-size:14px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font; 
+    }
+
 }

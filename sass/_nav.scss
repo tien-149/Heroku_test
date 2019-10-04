@@ -1,0 +1,28 @@
+$main-font:Biko, sans-serif;
+$main-color: #4e0606;
+.mainNav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0 auto;
+    ul{
+        margin:10px;
+    }
+    li {
+        display: inline-block;
+        transition: all .3s ease-in;
+
+            &:hover{
+                transform: scale(1.02);
+            }
+    }
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font;
+        &:hover{
+            color: #bf54a6;
+        }
+    }
+}
