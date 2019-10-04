@@ -3,6 +3,9 @@ main {
     text-align: center;
     margin: 0 auto;
 }
+$main-font:Biko, sans-serif;
+$main-color: #4e0606;
+
 .hidden{display:none;}
 
 .hero {
@@ -13,4 +16,76 @@ main {
 
 .mainHeader {
     display:flex;
+    flex-direction: row-reverse;
+
+    
+}
+
+.mainNav {
+    display: flex;
+    flex-direction: row;
+    ul{
+        margin:10px;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font;
+    }
+}
+
+.logoCon {
+    padding: 15px
+}
+
+.welcomeCon {
+    h3 {
+        font-size: 28px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font;
+        margin-top: 100px;
+
+    }
+    h4 {
+        font-size: 18px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font;
+        
+    }
+
+}
+
+.products {
+    img {
+    padding: 10px;
+    width: 250px;
+    height: 190px;
+    }ç
+    h2{
+        font-size:20px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font;   
+        
+    }
+    h3 {
+        font-size:14px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font; 
+    }
+    p{
+        font-size:14px;
+        text-decoration: none;
+        color: $main-color;
+        font-family: $main-font; 
+    }
+
 }
