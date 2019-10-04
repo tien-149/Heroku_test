@@ -1,2 +1,37 @@
-main{width:90%;text-align:center;margin:0 auto}
-/*# sourceMappingURL=main.css.map */
+main{width:90%;text-align:center;margin:0 auto}.hidden{display:none}.hero{background:url(../images/hero.jpg) center center no-repeat ; backdrop-filter: blur(8px);background-size:cover;height:700px}/*# sourceMappingURL=main.css.map */
+.mainHeader {
+    display:flex;
+    flex-direction: row-reverse;
+}
+.mainNav {
+    display: flex;
+    flex-direction: row;
+}
+.mainNav ul { margin:10px;}
+.mainNav ul li {display:inline-block;}
+.mainNav ul li a  {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color:#4e0606;
+    font-family: "Biko";
+  }
+#logoCon {
+    padding:15px;
+}
+.welcomeCon h3 {
+    font-size:28px;
+    font-family: "Biko";
+    text-decoration: none;
+    color:#4e0606;
+    margin-top: 100px;
+
+}
+.welcomeCon h4 {
+    font-size:18px;
+    font-family: "Biko";
+    text-decoration: none;
+    color:#4e0606;
+   
+
+}
