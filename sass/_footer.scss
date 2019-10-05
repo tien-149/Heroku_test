@@ -1,31 +1,30 @@
-$main-font:Biko, sans-serif;
-$main-color: #4e0606;
-.mainNav {
-    display: flex;
-    flex-direction: row;
+.footerNav {
+    background-color: $main-color;
+    font-size:12px;
+    font-family: "Biko";
+    
     margin: 0 auto;
-
+    text-align: center;
     ul{
-        margin:10px;
+        margin:6px;
     }
     li {
         display: inline-block;
-        
         transition: all .3s ease-in;
 
             &:hover{
-            transform: scale(1.02);
+                transform: scale(1.02);
             }
     }
     a {
         display: block;
-        
         padding: 6px 6px;
         text-decoration: none;
-        color: $main-color;
+        color: white;
         font-family: $main-font;
         &:hover{
             color: #bf54a6;
         }
     }
+
 }
