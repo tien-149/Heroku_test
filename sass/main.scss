@@ -1,5 +1,7 @@
 @import "_vars";
 @import "_nav";
+@import "_footer";
+@import "_mediaQueries";
 
 main {
     width: 90%;
@@ -12,54 +14,29 @@ $main-color: #4e0606;
 .hidden{display:none;}
 
 .hero {
-    background: url(../images/hero.jpg) center center no-repeat;
-    opacity: 60%;
+    background: url(../images/hero2.jpg) center center no-repeat ;
+    background-color: transparent; 
+    background-blend-mode: screen;
     background-size: cover;
     height: 700px;
 }
 
 .mainHeader {
     display:flex;
-    flex-direction: row-reverse;  
+    flex-direction: column;  
     padding: 10px;
 }
 
-// .mainNav {
-//     display: flex;
-//     flex-direction: row;
-//     float: right;
-//     ul{
-//         margin:10px;
-//     }
-//     li {
-//         display: inline-block;
-//         transition: all .3s ease-in;
-
-//             &:hover{
-//                 transform: scale(1.02);
-//             }
-//     }
-//     a {
-//         display: block;
-//         padding: 6px 12px;
-//         text-decoration: none;
-//         color: $main-color;
-//         font-family: $main-font;
-//         &:hover{
-//             color: #bf54a6;
-//         }
-//     }
-// }
 
 .logoCon {
-    padding: 15px;
-    margin-left: 30px;
+    padding: 25px;
+    margin: 0 auto;
 
 }
 
 .welcomeCon {
     h3 {
-        font-size: 28px;
+        font-size: 24px;
         text-decoration: none;
         color: $main-color;
         font-family: $main-font;
@@ -106,4 +83,17 @@ $main-color: #4e0606;
         font-family: $main-font; 
     }
 
+}
+
+.buyButton{
+    background-color: $main-color;
+    font-family: $main-font;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    &:hover{
+        color: #bf54a6;
+        -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transform-origin: 10%;
+    }
 }
